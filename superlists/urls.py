@@ -15,8 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from lists.views import home_page
+from lists.views import home_page, view_list
 
 urlpatterns = [
     path('', home_page),
+    path('lists/only-list/', view_list),
 ]
